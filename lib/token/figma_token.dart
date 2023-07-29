@@ -45,395 +45,395 @@ class FigmaColors {
 }
 
 class FigmaTextStyles {
-  const FigmaTextStyles();
+  FigmaTextStyles();
 
-  TextStyle get title1 => const TextStyle(
-        fontSize: 48,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Bold',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w700,
-        height: 56 / 48,
-        letterSpacing: 0,
-      );
+  static const TextStyle title1 = TextStyle(
+    fontSize: 48,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Bold',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w700,
+    height: 56 / 48,
+    letterSpacing: 0,
+  );
 
-  TextStyle get title2 => const TextStyle(
-        fontSize: 32,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Bold',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w700,
-        height: 36 / 32,
-        letterSpacing: 0,
-      );
+  static const TextStyle title2 = TextStyle(
+    fontSize: 32,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Bold',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w700,
+    height: 36 / 32,
+    letterSpacing: 0,
+  );
 
-  TextStyle get title3 => const TextStyle(
-        fontSize: 24,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Bold',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w700,
-        height: 32 / 24,
-        letterSpacing: 0,
-      );
+  static const TextStyle title3 = TextStyle(
+    fontSize: 24,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Bold',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w700,
+    height: 32 / 24,
+    letterSpacing: 0,
+  );
 
-  TextStyle get largeNoneBold => const TextStyle(
-        fontSize: 18,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Bold',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w700,
-        height: 18 / 18,
-        letterSpacing: 0,
-      );
+  static const TextStyle largeNoneBold = TextStyle(
+    fontSize: 18,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Bold',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w700,
+    height: 18 / 18,
+    letterSpacing: 0,
+  );
 
-  TextStyle get largeNoneMedium => const TextStyle(
-        fontSize: 18,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Medium',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w500,
-        height: 18 / 18,
-        letterSpacing: 0,
-      );
+  static const TextStyle largeNoneMedium = TextStyle(
+    fontSize: 18,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Medium',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w500,
+    height: 18 / 18,
+    letterSpacing: 0,
+  );
 
-  TextStyle get largeNoneRegular => const TextStyle(
-        fontSize: 18,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Regular',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w400,
-        height: 18 / 18,
-        letterSpacing: 0,
-      );
+  static const TextStyle largeNoneRegular = TextStyle(
+    fontSize: 18,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Regular',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w400,
+    height: 18 / 18,
+    letterSpacing: 0,
+  );
 
-  TextStyle get largeTightBold => const TextStyle(
-        fontSize: 18,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Bold',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w700,
-        height: 20 / 18,
-        letterSpacing: 0,
-      );
+  static const TextStyle largeTightBold = TextStyle(
+    fontSize: 18,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Bold',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w700,
+    height: 20 / 18,
+    letterSpacing: 0,
+  );
 
-  TextStyle get largeTightMedium => const TextStyle(
-        fontSize: 18,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Medium',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w500,
-        height: 20 / 18,
-        letterSpacing: 0,
-      );
+  static const TextStyle largeTightMedium = TextStyle(
+    fontSize: 18,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Medium',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w500,
+    height: 20 / 18,
+    letterSpacing: 0,
+  );
 
-  TextStyle get largeTightRegular => const TextStyle(
-        fontSize: 18,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Regular',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w400,
-        height: 20 / 18,
-        letterSpacing: 0,
-      );
+  static const TextStyle largeTightRegular = TextStyle(
+    fontSize: 18,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Regular',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w400,
+    height: 20 / 18,
+    letterSpacing: 0,
+  );
 
-  TextStyle get largeNormalBold => const TextStyle(
-        fontSize: 18,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Bold',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w700,
-        height: 24 / 18,
-        letterSpacing: 0,
-      );
+  static const TextStyle largeNormalBold = TextStyle(
+    fontSize: 18,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Bold',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w700,
+    height: 24 / 18,
+    letterSpacing: 0,
+  );
 
-  TextStyle get largeNormalMedium => const TextStyle(
-        fontSize: 18,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Medium',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w500,
-        height: 24 / 18,
-        letterSpacing: 0,
-      );
+  static const TextStyle largeNormalMedium = TextStyle(
+    fontSize: 18,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Medium',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w500,
+    height: 24 / 18,
+    letterSpacing: 0,
+  );
 
-  TextStyle get largeNormalRegular => const TextStyle(
-        fontSize: 18,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Regular',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w400,
-        height: 24 / 18,
-        letterSpacing: 0,
-      );
+  static const TextStyle largeNormalRegular = TextStyle(
+    fontSize: 18,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Regular',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w400,
+    height: 24 / 18,
+    letterSpacing: 0,
+  );
 
-  TextStyle get regularNoneBold => const TextStyle(
-        fontSize: 16,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Bold',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w700,
-        height: 16 / 16,
-        letterSpacing: 0,
-      );
+  static const TextStyle regularNoneBold = TextStyle(
+    fontSize: 16,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Bold',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w700,
+    height: 16 / 16,
+    letterSpacing: 0,
+  );
 
-  TextStyle get regularNoneMedium => const TextStyle(
-        fontSize: 16,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Medium',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w500,
-        height: 16 / 16,
-        letterSpacing: 0,
-      );
+  static const TextStyle regularNoneMedium = TextStyle(
+    fontSize: 16,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Medium',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w500,
+    height: 16 / 16,
+    letterSpacing: 0,
+  );
 
-  TextStyle get regularNoneRegular => const TextStyle(
-        fontSize: 16,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Regular',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w400,
-        height: 16 / 16,
-        letterSpacing: 0,
-      );
+  static const TextStyle regularNoneRegular = TextStyle(
+    fontSize: 16,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Regular',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w400,
+    height: 16 / 16,
+    letterSpacing: 0,
+  );
 
-  TextStyle get regularTightBold => const TextStyle(
-        fontSize: 16,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Bold',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w700,
-        height: 20 / 16,
-        letterSpacing: 0,
-      );
+  static const TextStyle regularTightBold = TextStyle(
+    fontSize: 16,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Bold',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w700,
+    height: 20 / 16,
+    letterSpacing: 0,
+  );
 
-  TextStyle get regularTightMedium => const TextStyle(
-        fontSize: 16,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Medium',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w500,
-        height: 20 / 16,
-        letterSpacing: 0,
-      );
+  static const TextStyle regularTightMedium = TextStyle(
+    fontSize: 16,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Medium',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w500,
+    height: 20 / 16,
+    letterSpacing: 0,
+  );
 
-  TextStyle get regularTightRegular => const TextStyle(
-        fontSize: 16,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Regular',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w400,
-        height: 20 / 16,
-        letterSpacing: 0,
-      );
+  static const TextStyle regularTightRegular = TextStyle(
+    fontSize: 16,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Regular',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w400,
+    height: 20 / 16,
+    letterSpacing: 0,
+  );
 
-  TextStyle get regularNormalBold => const TextStyle(
-        fontSize: 16,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Bold',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w700,
-        height: 24 / 16,
-        letterSpacing: 0,
-      );
+  static const TextStyle regularNormalBold = TextStyle(
+    fontSize: 16,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Bold',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w700,
+    height: 24 / 16,
+    letterSpacing: 0,
+  );
 
-  TextStyle get regularNormalMedium => const TextStyle(
-        fontSize: 16,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Medium',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w500,
-        height: 24 / 16,
-        letterSpacing: 0,
-      );
+  static const TextStyle regularNormalMedium = TextStyle(
+    fontSize: 16,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Medium',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w500,
+    height: 24 / 16,
+    letterSpacing: 0,
+  );
 
-  TextStyle get regularNormalRegular => const TextStyle(
-        fontSize: 16,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Regular',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w400,
-        height: 24 / 16,
-        letterSpacing: 0,
-      );
+  static const TextStyle regularNormalRegular = TextStyle(
+    fontSize: 16,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Regular',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w400,
+    height: 24 / 16,
+    letterSpacing: 0,
+  );
 
-  TextStyle get smallNoneBold => const TextStyle(
-        fontSize: 14,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Bold',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w700,
-        height: 14 / 14,
-        letterSpacing: 0,
-      );
+  static const TextStyle smallNoneBold = TextStyle(
+    fontSize: 14,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Bold',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w700,
+    height: 14 / 14,
+    letterSpacing: 0,
+  );
 
-  TextStyle get smallNoneMedium => const TextStyle(
-        fontSize: 14,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Medium',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w500,
-        height: 14 / 14,
-        letterSpacing: 0,
-      );
+  static const TextStyle smallNoneMedium = TextStyle(
+    fontSize: 14,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Medium',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w500,
+    height: 14 / 14,
+    letterSpacing: 0,
+  );
 
-  TextStyle get smallNoneRegular => const TextStyle(
-        fontSize: 14,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Regular',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w400,
-        height: 14 / 14,
-        letterSpacing: 0,
-      );
+  static const TextStyle smallNoneRegular = TextStyle(
+    fontSize: 14,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Regular',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w400,
+    height: 14 / 14,
+    letterSpacing: 0,
+  );
 
-  TextStyle get smallTightBold => const TextStyle(
-        fontSize: 14,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Bold',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w700,
-        height: 16 / 14,
-        letterSpacing: 0,
-      );
+  static const TextStyle smallTightBold = TextStyle(
+    fontSize: 14,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Bold',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w700,
+    height: 16 / 14,
+    letterSpacing: 0,
+  );
 
-  TextStyle get smallTightMedium => const TextStyle(
-        fontSize: 14,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Medium',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w500,
-        height: 16 / 14,
-        letterSpacing: 0,
-      );
+  static const TextStyle smallTightMedium = TextStyle(
+    fontSize: 14,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Medium',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w500,
+    height: 16 / 14,
+    letterSpacing: 0,
+  );
 
-  TextStyle get smallTightRegular => const TextStyle(
-        fontSize: 14,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Regular',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w400,
-        height: 16 / 14,
-        letterSpacing: 0,
-      );
+  static const TextStyle smallTightRegular = TextStyle(
+    fontSize: 14,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Regular',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w400,
+    height: 16 / 14,
+    letterSpacing: 0,
+  );
 
-  TextStyle get smallNormalBold => const TextStyle(
-        fontSize: 14,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Bold',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w700,
-        height: 20 / 14,
-        letterSpacing: 0,
-      );
+  static const TextStyle smallNormalBold = TextStyle(
+    fontSize: 14,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Bold',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w700,
+    height: 20 / 14,
+    letterSpacing: 0,
+  );
 
-  TextStyle get smallNormalMedium => const TextStyle(
-        fontSize: 14,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Medium',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w500,
-        height: 20 / 14,
-        letterSpacing: 0,
-      );
+  static const TextStyle smallNormalMedium = TextStyle(
+    fontSize: 14,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Medium',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w500,
+    height: 20 / 14,
+    letterSpacing: 0,
+  );
 
-  TextStyle get smallNormalRegular => const TextStyle(
-        fontSize: 14,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Regular',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w400,
-        height: 20 / 14,
-        letterSpacing: 0,
-      );
+  static const TextStyle smallNormalRegular = TextStyle(
+    fontSize: 14,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Regular',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w400,
+    height: 20 / 14,
+    letterSpacing: 0,
+  );
 
-  TextStyle get tinyNoneBold => const TextStyle(
-        fontSize: 12,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Bold',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w700,
-        height: 12 / 12,
-        letterSpacing: 0,
-      );
+  static const TextStyle tinyNoneBold = TextStyle(
+    fontSize: 12,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Bold',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w700,
+    height: 12 / 12,
+    letterSpacing: 0,
+  );
 
-  TextStyle get tinyNoneMedium => const TextStyle(
-        fontSize: 12,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Medium',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w500,
-        height: 12 / 12,
-        letterSpacing: 0,
-      );
+  static const TextStyle tinyNoneMedium = TextStyle(
+    fontSize: 12,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Medium',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w500,
+    height: 12 / 12,
+    letterSpacing: 0,
+  );
 
-  TextStyle get tinyNoneRegular => const TextStyle(
-        fontSize: 12,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Regular',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w400,
-        height: 12 / 12,
-        letterSpacing: 0,
-      );
+  static const TextStyle tinyNoneRegular = TextStyle(
+    fontSize: 12,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Regular',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w400,
+    height: 12 / 12,
+    letterSpacing: 0,
+  );
 
-  TextStyle get tinyTightBold => const TextStyle(
-        fontSize: 12,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Bold',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w700,
-        height: 14 / 12,
-        letterSpacing: 0,
-      );
+  static const TextStyle tinyTightBold = TextStyle(
+    fontSize: 12,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Bold',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w700,
+    height: 14 / 12,
+    letterSpacing: 0,
+  );
 
-  TextStyle get tinyTightMedium => const TextStyle(
-        fontSize: 12,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Medium',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w500,
-        height: 14 / 12,
-        letterSpacing: 0,
-      );
+  static const TextStyle tinyTightMedium = TextStyle(
+    fontSize: 12,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Medium',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w500,
+    height: 14 / 12,
+    letterSpacing: 0,
+  );
 
-  TextStyle get tinyTightRegular => const TextStyle(
-        fontSize: 12,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Regular',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w400,
-        height: 14 / 12,
-        letterSpacing: 0,
-      );
+  static const TextStyle tinyTightRegular = TextStyle(
+    fontSize: 12,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Regular',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w400,
+    height: 14 / 12,
+    letterSpacing: 0,
+  );
 
-  TextStyle get tinyNormalBold => const TextStyle(
-        fontSize: 12,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Bold',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w700,
-        height: 16 / 12,
-        letterSpacing: 0,
-      );
+  static const TextStyle tinyNormalBold = TextStyle(
+    fontSize: 12,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Bold',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w700,
+    height: 16 / 12,
+    letterSpacing: 0,
+  );
 
-  TextStyle get tinyNormalMedium => const TextStyle(
-        fontSize: 12,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Medium',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w500,
-        height: 16 / 12,
-        letterSpacing: 0,
-      );
+  static const TextStyle tinyNormalMedium = TextStyle(
+    fontSize: 12,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Medium',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w500,
+    height: 16 / 12,
+    letterSpacing: 0,
+  );
 
-  TextStyle get tinyNormalRegular => const TextStyle(
-        fontSize: 12,
-        decoration: TextDecoration.none,
-        fontFamily: 'Inter-Regular',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w400,
-        height: 16 / 12,
-        letterSpacing: 0,
-      );
+  static const TextStyle tinyNormalRegular = TextStyle(
+    fontSize: 12,
+    decoration: TextDecoration.none,
+    fontFamily: 'Inter-Regular',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w400,
+    height: 16 / 12,
+    letterSpacing: 0,
+  );
 }
