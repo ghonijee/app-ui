@@ -54,6 +54,7 @@ class _SegmentedControlState extends State<SegmentedControl> {
     return SizedBox(
       width: double.infinity,
       child: CupertinoSegmentedControl(
+        padding: EdgeInsets.zero,
         groupValue: widget.groupValue,
         borderColor: context.theme.appColors.ink.darker,
         unselectedColor: context.theme.appColors.ink.darker,
