@@ -11,7 +11,7 @@ class ChipUi extends StatefulWidget {
       required this.label,
       required this.isActive,
       required this.onValueChanged});
-  final Widget icon;
+  final Widget? icon;
   final String label;
   final bool isActive;
   final Function() onValueChanged;
@@ -43,8 +43,10 @@ class _ChipUiState extends State<ChipUi> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             TextUI.smallNoneRegular(widget.label),
-            FreeSpaceUI.horizontal(12),
-            widget.icon,
+            widget.icon != null
+                ? FreeSpaceUI.horizontal(12)
+                : const FreeSpaceUI(),
+            widget.icon ?? const SizedBox(),
           ],
         ),
       ),
