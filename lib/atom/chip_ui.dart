@@ -10,10 +10,12 @@ class ChipUi extends StatefulWidget {
       required this.icon,
       required this.label,
       required this.isActive,
-      required this.onValueChanged});
+      required this.onValueChanged,
+      this.alignment});
   final Widget? icon;
   final String label;
   final bool isActive;
+  final Alignment? alignment;
   final Function() onValueChanged;
 
   @override
@@ -26,8 +28,7 @@ class _ChipUiState extends State<ChipUi> {
     return GestureDetector(
       onTap: widget.onValueChanged,
       child: Container(
-        alignment: Alignment.center,
-        margin: const EdgeInsets.only(right: 12),
+        alignment: widget.alignment,
         decoration: BoxDecoration(
             color: context.theme.appColors.ink.dark,
             border: widget.isActive
@@ -36,19 +37,19 @@ class _ChipUiState extends State<ChipUi> {
                     width: 2,
                   )
                 : null,
-            borderRadius: const BorderRadius.all(Radius.circular(32))),
+            borderRadius: const BorderRadius.all(Radius.circular(45))),
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            TextUI.smallNoneRegular(widget.label),
-            widget.icon != null
-                ? FreeSpaceUI.horizontal(12)
-                : const FreeSpaceUI(),
-            widget.icon ?? const SizedBox(),
-          ],
-        ),
+        child: widget.icon == null
+            ? TextUI.smallNoneRegular(widget.label)
+            : Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  TextUI.smallNoneRegular(widget.label),
+                  FreeSpaceUI.horizontal(12),
+                  widget.icon!,
+                ],
+              ),
       ),
     );
   }

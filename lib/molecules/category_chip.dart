@@ -9,15 +9,18 @@ class CategoryChip extends StatelessWidget {
     required this.label,
     required this.isActive,
     required this.onValueChanged,
+    this.alignment,
   });
   final IconData? icon;
   final String label;
   final bool isActive;
+  final Alignment? alignment;
   final Function() onValueChanged;
 
   @override
   Widget build(BuildContext context) {
     return ChipUi(
+      alignment: alignment,
       icon: icon != null
           ? Container(
               padding: const EdgeInsets.all(4),
