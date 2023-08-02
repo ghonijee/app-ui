@@ -68,7 +68,7 @@ class _SegmentedControlState extends State<SegmentedControl> {
             .asMap(),
         onValueChanged: (value) {
           final item = widget.children[value];
-          return widget.onValueChanged(value, item);
+          widget.onValueChanged(value, item);
         },
       ),
     );

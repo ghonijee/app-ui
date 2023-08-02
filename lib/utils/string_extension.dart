@@ -47,7 +47,7 @@ extension extensionString on String {
   /// ```
   int? toNumber() {
     if (this.length > 0) {
-      return int.parse(toNumericString(this));
+      return int.parse(toNumericString(this, mantissaSeparator: ","));
     }
     return null;
   }
