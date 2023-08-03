@@ -10,10 +10,14 @@ class AccountChip extends StatelessWidget {
     required this.isActive,
     required this.onValueChanged,
     this.alignment,
+    this.height,
+    this.width,
   });
   final String assetPath;
   final String label;
   final bool isActive;
+  final double? width;
+  final double? height;
   final Alignment? alignment;
   final Function() onValueChanged;
 
@@ -21,7 +25,8 @@ class AccountChip extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChipUi(
       alignment: alignment,
-      // icon: null,
+      width: width,
+      height: height,
       icon: Container(
           width: 28,
           padding: const EdgeInsets.all(4),

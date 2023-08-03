@@ -5,16 +5,21 @@ import 'free_space_ui.dart';
 import 'text_ui.dart';
 
 class ChipUi extends StatefulWidget {
-  const ChipUi(
-      {super.key,
-      required this.icon,
-      required this.label,
-      required this.isActive,
-      required this.onValueChanged,
-      this.alignment});
+  const ChipUi({
+    super.key,
+    required this.icon,
+    required this.label,
+    required this.isActive,
+    required this.onValueChanged,
+    this.height,
+    this.width,
+    this.alignment,
+  });
   final Widget? icon;
   final String label;
   final bool isActive;
+  final double? width;
+  final double? height;
   final Alignment? alignment;
   final Function() onValueChanged;
 
@@ -28,6 +33,8 @@ class _ChipUiState extends State<ChipUi> {
     return GestureDetector(
       onTap: widget.onValueChanged,
       child: Container(
+        width: widget.width,
+        height: widget.height,
         alignment: widget.alignment,
         decoration: BoxDecoration(
             color: context.theme.appColors.ink.dark,
