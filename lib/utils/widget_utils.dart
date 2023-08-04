@@ -15,4 +15,11 @@ class WidgetUI {
       builder: (context) {
         return child;
       });
+
+  static visibility({
+    required bool visibility,
+    required Widget child,
+  }) {
+    return visibility ? child : const SizedBox.shrink();
+  }
 }
