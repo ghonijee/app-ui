@@ -27,16 +27,11 @@ class AccountChip extends StatelessWidget {
       alignment: alignment,
       width: width,
       height: height,
-      icon: Container(
-          width: 28,
-          padding: const EdgeInsets.all(4),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(8),
-            color: context.theme.appColors.red.lightest,
-          ),
+      icon: ClipRRect(
+          borderRadius: BorderRadius.circular(8),
           child: Image.asset(
             assetPath,
-            width: 20,
+            width: 32,
             fit: BoxFit.cover,
           )),
       label: label,

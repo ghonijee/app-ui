@@ -52,9 +52,9 @@ class _ChipUiState extends State<ChipUi> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  TextUI.smallNoneRegular(widget.label),
-                  FreeSpaceUI.horizontal(12),
                   widget.icon!,
+                  FreeSpaceUI.horizontal(12),
+                  TextUI.smallNoneRegular(widget.label),
                 ],
               ),
       ),
