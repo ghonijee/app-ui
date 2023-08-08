@@ -34,6 +34,7 @@ class _AmountInputFieldState extends State<AmountInputField> {
             ThousandsFormatter(),
           ],
           decoration: const InputDecoration(
+            hintText: "0",
             contentPadding: EdgeInsets.symmetric(
               vertical: 20,
               horizontal: 20,

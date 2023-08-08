@@ -14,6 +14,7 @@ class ChipUi extends StatefulWidget {
     this.height,
     this.width,
     this.alignment,
+    this.mainAxisAlignment = MainAxisAlignment.center,
   });
   final Widget? icon;
   final String label;
@@ -22,6 +23,7 @@ class ChipUi extends StatefulWidget {
   final double? height;
   final Alignment? alignment;
   final Function() onValueChanged;
+  final MainAxisAlignment mainAxisAlignment;
 
   @override
   State<ChipUi> createState() => _ChipUiState();
@@ -47,14 +49,20 @@ class _ChipUiState extends State<ChipUi> {
             borderRadius: const BorderRadius.all(Radius.circular(45))),
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
         child: widget.icon == null
-            ? TextUI.smallNoneRegular(widget.label)
+            ? TextUI.smallNoneRegular(
+                widget.label,
+                overflow: TextOverflow.ellipsis,
+              )
             : Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: widget.mainAxisAlignment,
                 children: [
                   widget.icon!,
                   FreeSpaceUI.horizontal(12),
-                  TextUI.smallNoneRegular(widget.label),
+                  TextUI.smallNoneRegular(
+                    widget.label,
+                    overflow: TextOverflow.ellipsis,
+                  ),
                 ],
               ),
       ),

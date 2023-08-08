@@ -1,5 +1,4 @@
 import 'package:app_ui/atom/atom.dart';
-import 'package:app_ui/utils/theme_extension.dart';
 import 'package:flutter/material.dart';
 
 class AccountChip extends StatelessWidget {
@@ -25,6 +24,7 @@ class AccountChip extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChipUi(
       alignment: alignment,
+      mainAxisAlignment: MainAxisAlignment.start,
       width: width,
       height: height,
       icon: ClipRRect(
