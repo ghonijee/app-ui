@@ -16,14 +16,11 @@ class AppColorExtension extends ThemeExtension<AppColorExtension> {
 
   @override
   ThemeExtension<AppColorExtension> copyWith() {
-    // TODO: implement copyWith
     throw UnimplementedError();
   }
 
   @override
-  ThemeExtension<AppColorExtension> lerp(
-      covariant ThemeExtension<AppColorExtension>? other, double t) {
-    // TODO: implement lerp
+  ThemeExtension<AppColorExtension> lerp(covariant ThemeExtension<AppColorExtension>? other, double t) {
     throw UnimplementedError();
   }
 }

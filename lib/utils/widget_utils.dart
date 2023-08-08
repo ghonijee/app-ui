@@ -28,7 +28,7 @@ class WidgetUI {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Container(
-                      margin: EdgeInsets.only(top: 12),
+                      margin: const EdgeInsets.only(top: 12),
                       height: 6,
                       width: 70,
                       decoration: BoxDecoration(

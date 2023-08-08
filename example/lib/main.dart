@@ -41,7 +41,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("APP UI"),
+        title: const Text("APP UI"),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -50,11 +50,10 @@ class _HomePageState extends State<HomePage> {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(
-                      builder: (context) => const ListComponentPage()),
+                  MaterialPageRoute(builder: (context) => const ListComponentPage()),
                 );
               },
-              title: Text("List Component"),
+              title: const Text("List Component"),
             )
           ],
         ),

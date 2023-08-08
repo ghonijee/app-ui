@@ -2,7 +2,6 @@
 import 'package:app_ui/atom/text_ui.dart';
 import 'package:app_ui/utils/theme_extension.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 
 class SegmentedControlValue {
   final Widget? child;
@@ -61,9 +60,7 @@ class _SegmentedControlState extends State<SegmentedControl> {
         selectedColor: context.theme.appColors.ink.dark,
         pressedColor: context.theme.appColors.ink.dark,
         children: widget.children
-            .map((e) => Padding(
-                padding: const EdgeInsets.all(8),
-                child: e.child ?? TextUI.tinyNoneMedium(e.label!)))
+            .map((e) => Padding(padding: const EdgeInsets.all(8), child: e.child ?? TextUI.tinyNoneMedium(e.label!)))
             .toList()
             .asMap(),
         onValueChanged: (value) {

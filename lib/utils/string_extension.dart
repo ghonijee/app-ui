@@ -1,36 +1,25 @@
 import 'package:flutter_multi_formatter/flutter_multi_formatter.dart';
 import 'package:intl/intl.dart';
 
-extension extensionString on String {
+extension ExtensionString on String {
   String currency({String? prefix}) {
-    return toCurrencyString(this,
-        mantissaLength: 0, leadingSymbol: prefix ?? "Rp. ");
+    return toCurrencyString(this, mantissaLength: 0, leadingSymbol: prefix ?? "Rp. ");
   }
 
   String initial() {
-    return this.isNotEmpty
-        ? this
-            .trim()
-            .split(RegExp(' +'))
-            .map((s) => s[0])
-            .take(2)
-            .join()
-            .toUpperCase()
-        : '';
+    return isNotEmpty ? trim().split(RegExp(' +')).map((s) => s[0]).take(2).join().toUpperCase() : '';
   }
 
   String get titleProduct {
-    var name = this.isNotEmpty
-        ? this.trim().split(RegExp(' +')).take(2).join(" ")
-        : '';
+    var name = isNotEmpty ? trim().split(RegExp(' +')).take(2).join(" ") : '';
     if (name.length > 15) {
-      return name.split(RegExp(' +')).take(1).join() + " ...";
+      return "${name.split(RegExp(' +')).take(1).join()} ...";
     }
     return name;
   }
 
   String firstCapitalize() {
-    return "${this[0].toUpperCase()}${this.substring(1).toLowerCase()}";
+    return "${this[0].toUpperCase()}${substring(1).toLowerCase()}";
   }
 
   /// Convert from [String] to [int?]
@@ -46,14 +35,14 @@ extension extensionString on String {
   /// print(result!) // 10000
   /// ```
   int? toNumber() {
-    if (this.length > 0) {
+    if (length > 0) {
       return int.parse(toNumericString(this, mantissaSeparator: ","));
     }
     return null;
   }
 
   double? toDouble() {
-    if (this.length > 0) {
+    if (length > 0) {
       return double.parse(this);
     }
     return null;
@@ -78,8 +67,7 @@ extension ExtensionInt on num {
   }
 
   String currency() {
-    return toCurrencyString(toString(),
-        mantissaLength: 0, leadingSymbol: "Rp. ");
+    return toCurrencyString(toString(), mantissaLength: 0, leadingSymbol: "Rp. ");
   }
 
   /// Convert from int to string
