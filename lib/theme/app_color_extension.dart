@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class AppColorExtension extends ThemeExtension<AppColorExtension> {
   final Color background = FigmaColors.inkDarkest;
-  final Color onBackground = FigmaColors.skyLightest;
+  final Color onBackground = FigmaColors.skyBase;
   final Color surface = FigmaColors.inkDarker;
   final Color onSurface = FigmaColors.skyWhite;
   final primary = _Primary();
