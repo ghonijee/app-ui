@@ -20,7 +20,8 @@ class MemoInputField extends StatelessWidget {
         controller: memoController,
         textAlign: TextAlign.center,
         style: FigmaTextStyles.regularTightRegular,
-        keyboardType: TextInputType.text,
+        textInputAction: TextInputAction.newline,
+        // keyboardType: TextInputType.text,
         keyboardAppearance: Brightness.dark,
         decoration: const InputDecoration(
           hintText: "Write a memo",
