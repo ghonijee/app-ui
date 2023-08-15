@@ -22,6 +22,10 @@ extension ExtensionString on String {
     return "${this[0].toUpperCase()}${substring(1).toLowerCase()}";
   }
 
+  bool parseBool() {
+    return toLowerCase() == 'true';
+  }
+
   /// Convert from [String] to [int?]
   /// with formated Currency Rupiah (Rp.)
   ///
