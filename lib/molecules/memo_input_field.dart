@@ -6,9 +6,11 @@ class MemoInputField extends StatelessWidget {
   const MemoInputField({
     super.key,
     required this.memoController,
+    this.hintText = "Write a memo",
   });
 
   final TextEditingController memoController;
+  final String hintText;
 
   @override
   Widget build(BuildContext context) {
@@ -23,8 +25,8 @@ class MemoInputField extends StatelessWidget {
         textInputAction: TextInputAction.newline,
         // keyboardType: TextInputType.text,
         keyboardAppearance: Brightness.dark,
-        decoration: const InputDecoration(
-          hintText: "Write a memo",
+        decoration: InputDecoration(
+          hintText: hintText,
           border: InputBorder.none,
         ),
         maxLines: 3,
